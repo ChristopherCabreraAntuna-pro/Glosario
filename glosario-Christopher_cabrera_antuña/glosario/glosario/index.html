@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glosario de la web</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <p class="modulo">Aplicaciones Web · 2º SMR · UT1</p>
+    <h1>Glosario</h1>
+    <p>Hecho por: <strong>Tu nombre</strong></p>
+  </header>
+
+  <main>
+
+    <section id="mi-web">
+      <h2>La web que he elegido</h2>
+      <p>He elegido <a href="https://www.youtube.com/">YouTube</a> porque permite ver cómo funciona una web dinámica: reproduce vídeos y adapta su contenido a las búsquedas y preferencias de cada usuario.</p>
+    </section>
+
+    <section id="glosario">
+      <h2>Glosario</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Término</th>
+            <th>Definición con mis palabras</th>
+            <th>Ejemplo en mi web</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">Cliente</th>
+          <td>Es el programa o dispositivo que solicita información o servicios a un servidor; normalmente, el navegador.</td>
+          <td>Al abrir YouTube, mi navegador actúa como cliente y solicita la página y los vídeos que quiero ver.</td>
+        </tr>
+        <tr>
+          <th scope="row">Servidor</th>
+          <td>Es un equipo que recibe solicitudes de otros dispositivos y les envía datos o servicios.</td>
+          <td>Los servidores de YouTube reciben las solicitudes del navegador y envían la página, los datos y el vídeo solicitado.</td>
+        </tr>
+        <tr>
+          <th scope="row">Servidor web</th>
+          <td>Es el programa que recibe peticiones HTTP y entrega páginas y otros recursos web.</td>
+          <td>Al abrir youtube.com, el servidor web responde con los recursos necesarios para mostrar la página.</td>
+        </tr>
+        <tr>
+          <th scope="row">Apache</th>
+          <td>Es un programa servidor web de código abierto que puede alojar sitios y atender peticiones HTTP.</td>
+          <td>No se puede confirmar desde la página si YouTube usa Apache; el servidor web que utiliza es un detalle interno.</td>
+        </tr>
+        <tr>
+          <th scope="row">URL</th>
+          <td>Es la dirección completa que indica cómo y dónde encontrar un recurso en Internet.</td>
+          <td>https://www.youtube.com/watch?v=VIDEO_ID es un ejemplo de URL para abrir un vídeo.</td>
+        </tr>
+        <tr>
+          <th scope="row">Protocolo</th>
+          <td>Es un conjunto de reglas que permite que los dispositivos se comuniquen.</td>
+          <td>En https://www.youtube.com, HTTPS indica el protocolo seguro usado para acceder a YouTube.</td>
+        </tr>
+        <tr>
+          <th scope="row">Dominio</th>
+          <td>Es el nombre legible que identifica un sitio en Internet y que el DNS relaciona con una dirección IP.</td>
+          <td>En https://www.youtube.com, el dominio es www.youtube.com.</td>
+        </tr>
+        <tr>
+          <th scope="row">Ruta</th>
+          <td>Es la parte de la URL que indica un recurso o sección dentro del sitio.</td>
+          <td>En https://www.youtube.com/watch?v=VIDEO_ID, /watch es la ruta que identifica la página del reproductor.</td>
+        </tr>
+        <tr>
+          <th scope="row">Dirección IP</th>
+          <td>Es un número que identifica un dispositivo o servidor dentro de una red.</td>
+          <td>Al ejecutar <code>nslookup www.youtube.com</code>, se consultan las direcciones IP asociadas al dominio.</td>
+        </tr>
+        <tr>
+          <th scope="row">DNS</th>
+          <td>Es el sistema que busca la dirección IP asociada a un nombre de dominio.</td>
+          <td>Antes de conectar con www.youtube.com, el navegador consulta el DNS para encontrar una dirección IP del servicio.</td>
+        </tr>
+        <tr>
+          <th scope="row">HTTP</th>
+          <td>Es un protocolo que permite intercambiar peticiones y respuestas entre el navegador y un servidor web.</td>
+          <td>YouTube usa el protocolo HTTP para las peticiones y respuestas; al navegar de forma segura, la conexión va protegida con HTTPS.</td>
+        </tr>
+        <tr>
+          <th scope="row">HTTPS</th>
+          <td>Es HTTP protegido mediante cifrado TLS, que ayuda a mantener privada e íntegra la comunicación.</td>
+          <td>La dirección https://www.youtube.com y el indicador de conexión segura del navegador muestran que se usa HTTPS.</td>
+        </tr>
+        <tr>
+          <th scope="row">Puerto</th>
+          <td>Es un número que identifica el servicio de red al que se dirige una conexión dentro de un equipo.</td>
+          <td>La conexión HTTPS con YouTube suele usar el puerto 443, aunque no aparezca en la barra de direcciones.</td>
+        </tr>
+        <tr>
+          <th scope="row">Petición</th>
+          <td>Es el mensaje que envía un cliente a un servidor para solicitar un recurso o realizar una acción.</td>
+          <td>Al abrir un vídeo, el navegador envía peticiones a YouTube para cargar la página y reproducir el contenido.</td>
+        </tr>
+        <tr>
+          <th scope="row">Respuesta</th>
+          <td>Es el mensaje que devuelve el servidor al cliente después de procesar una petición.</td>
+          <td>Al solicitar un vídeo, YouTube responde con los datos y recursos necesarios; la pestaña Red del navegador permite inspeccionar esas respuestas.</td>
+        </tr>
+        <tr>
+          <th scope="row">Código de estado</th>
+          <td>Es un número incluido en una respuesta HTTP que informa del resultado de la petición.</td>
+          <td>En la pestaña Red, puedo comprobar el código de cada petición a YouTube: por ejemplo, 200 suele indicar éxito y 404 que no se encontró ese recurso.</td>
+        </tr>
+        <tr>
+          <th scope="row">Web estática</th>
+          <td>Es una web que entrega archivos cuyo contenido no se genera de nuevo para cada visitante.</td>
+          <td>YouTube no es solo una web estática: aunque utiliza archivos estáticos como imágenes, también genera y actualiza contenido según cada usuario.</td>
+        </tr>
+        <tr>
+          <th scope="row">Web dinámica</th>
+          <td>Es una web cuyo contenido puede generarse o cambiar según los datos, las acciones o el usuario.</td>
+          <td>YouTube es dinámica: muestra recomendaciones y resultados de búsqueda, y actualiza el reproductor cuando elijo otro vídeo.</td>
+        </tr>
+        <tr>
+          <th scope="row">PHP</th>
+          <td>Es un lenguaje de programación que se ejecuta habitualmente en el servidor y puede generar páginas web.</td>
+          <td>No se puede confirmar desde la página si YouTube utiliza PHP; el lenguaje empleado en sus servidores no se deduce de lo que aparece en el navegador.</td>
+        </tr>
+        <tr>
+          <th scope="row">Base de datos</th>
+          <td>Es un sistema organizado para guardar, consultar y modificar información.</td>
+          <td>YouTube necesita almacenar información como vídeos, canales y comentarios; desde la página no se puede saber qué tecnología de base de datos utiliza.</td>
+        </tr>
+        <tr>
+          <th scope="row">LAMP</th>
+          <td>Es una combinación de Linux, Apache, MySQL o MariaDB y PHP, usada para alojar aplicaciones web.</td>
+          <td>No se puede afirmar que YouTube use LAMP: para saberlo habría que conocer los sistemas operativos y programas instalados en sus servidores.</td>
+        </tr>
+        <tr>
+          <th scope="row">JSON</th>
+          <td>Es un formato de texto sencillo para representar e intercambiar datos estructurados.</td>
+          <td>Algunas peticiones de datos de YouTube pueden inspeccionarse en la pestaña Red; si una respuesta está en JSON, se verá como datos organizados en pares de nombre y valor.</td>
+        </tr>
+        <tr>
+          <th scope="row">XML</th>
+          <td>Es un formato de texto que organiza datos mediante etiquetas descriptivas.</td>
+          <td>XML organiza datos con etiquetas, por ejemplo <code>&lt;video&gt;&lt;titulo&gt;Mi vídeo&lt;/titulo&gt;&lt;/video&gt;</code>. No se puede asegurar que la página abierta de YouTube use XML sin inspeccionar una respuesta que lo contenga.</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="evidencias">
+      <h2>Evidencias</h2>
+      <div class="evidencias">
+      <figure>
+        <img src="capturas/url.png" alt="Barra de direcciones de mi web con sus partes señaladas">
+        <figcaption>La barra de direcciones muestra la URL de YouTube; se pueden señalar el protocolo HTTPS, el dominio y la ruta del vídeo.</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/nslookup.png" alt="Resultado de nslookup con el dominio de mi web">
+        <figcaption>El resultado de nslookup muestra las direcciones IP que el DNS devuelve para www.youtube.com.</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/red.png" alt="Pestaña Red de F12 con una petición y su código de estado">
+        <figcaption>La pestaña Red de las herramientas del navegador muestra una petición a YouTube y su código de estado HTTP.</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/https.png" alt="Candado e información del certificado de mi web">
+        <figcaption>El navegador indica que la conexión con YouTube usa HTTPS; la información del certificado permite comprobar su identidad y validez.</figcaption>
+      </figure>
+      <figure>
+        <img src="capturas/json.png" alt="Pestaña Red de F12, filtro Fetch/XHR, con una respuesta en JSON">
+        <figcaption>En la pestaña Red, el filtro Fetch/XHR permite buscar una respuesta de YouTube cuyo contenido o tipo indique JSON.</figcaption>
+      </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Aplicaciones Web · 2º SMR</p>
+  </footer>
+
+</body>
+</html>
